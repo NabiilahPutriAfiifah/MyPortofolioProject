@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Interaktif</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Quiz Sederhana</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="projects.html">Projects</a> |
+      <a href="skills.html">Skills</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="quiz.html" class="active">Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="quiz-container">
+      <h2>Jawab pertanyaan berikut!</h2>
+      <form id="quizForm">
+        <div class="question">
+          <p>1. HTML digunakan untuk?</p>
+          <label><input type="radio" name="q1" value="a"> Membuat tampilan halaman web</label><br>
+          <label><input type="radio" name="q1" value="b"> Menyimpan data</label><br>
+          <label><input type="radio" name="q1" value="c"> Mengatur server</label>
+        </div>
+
+        <div class="question">
+          <p>2. CSS berfungsi untuk?</p>
+          <label><input type="radio" name="q2" value="a"> Memberi warna dan gaya</label><br>
+          <label><input type="radio" name="q2" value="b"> Mengatur logika</label><br>
+          <label><input type="radio" name="q2" value="c"> Menyimpan database</label>
+        </div>
+
+        <div class="question">
+          <p>3. JavaScript digunakan untuk?</p>
+          <label><input type="radio" name="q3" value="a"> Membuat halaman interaktif</label><br>
+          <label><input type="radio" name="q3" value="b"> Mengelola jaringan</label><br>
+          <label><input type="radio" name="q3" value="c"> Mengedit gambar</label>
+        </div>
+
+        <div class="question">
+          <p>4. Tag <strong>&lt;img&gt;</strong> digunakan untuk?</p>
+          <label><input type="radio" name="q4" value="a"> Menyisipkan gambar</label><br>
+          <label><input type="radio" name="q4" value="b"> Membuat tabel</label><br>
+          <label><input type="radio" name="q4" value="c"> Menampilkan video</label>
+        </div>
+
+        <div class="question">
+          <p>5. Apa kepanjangan dari CSS?</p>
+          <label><input type="radio" name="q5" value="a"> Cascading Style Sheets</label><br>
+          <label><input type="radio" name="q5" value="b"> Creative Style System</label><br>
+          <label><input type="radio" name="q5" value="c"> Computer Styling Software</label>
+        </div>
+
+        <button type="button" onclick="hitungSkor()">Kirim Jawaban</button>
+      </form>
+
+      <p id="hasil"></p>
+    </section>
+
+    <section class="fun-zone">
+      <h3>Zona Seru 🔥</h3>
+      <button onclick="ubahWarna()">Ubah Tema</button>
+      <button onclick="ucapanAcak()">Ucapan Random</button>
+      <button onclick="easterEgg()">Klik Rahasia</button>
+      <button onclick="shakePage()">Goyangkan Halaman</button>
+      <p id="jam"></p>
+    </section>
+  </main>
+
+ <footer id="footer">
+    <p>© 2025 Nabiilah Putri Afiifah</p>
+  </footer>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
