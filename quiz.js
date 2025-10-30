@@ -32,7 +32,7 @@ function hitungSkor() {
 function ubahWarna() {
   document.body.style.backgroundColor =
     "#" + Math.floor(Math.random() * 16777215).toString(16);
-}
+}  
 
 function ucapanAcak() {
   const pesan = [
@@ -45,9 +45,23 @@ function ucapanAcak() {
   alert(pesan[Math.floor(Math.random() * pesan.length)]);
 }
 
-function easterEgg() {
-  alert("🎉 Kamu menemukan rahasia Quiz ini!");
-}
+// function easterEgg() {
+//   alert("🎉 Kamu menemukan rahasia Quiz ini!");
+// }
+
+// document.addEventListener("DOMContentLoaded", () => {
+
+
+// }); 
+let klikRahasia = 0;
+document.getElementById("footer").addEventListener("click", (e) => {
+  e.preventDefault();
+  klikRahasia++;
+  if (klikRahasia === 3) {
+    alert("🎉 Kamu menemukan Easter Egg rahasia!");
+  }
+});
+
 
 function shakePage() {
   document.body.classList.add("shake");
